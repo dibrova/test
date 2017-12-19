@@ -36,7 +36,7 @@ void main() {
 	char a;
 	cout << check("(1+2*(8-1)(*)(3-5)+(8-2))");
 	cout << endl;
-	cout << check(")(1+2*)(((8-1)*(3-5)+(8-2)+)(");
+	cout << check(")(1+2)(((8-1)*(3-5)))+(8-2)+)(");
 	cout << endl;
 	cin >> a;
 
