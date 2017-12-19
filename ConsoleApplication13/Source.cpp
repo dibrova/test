@@ -4,28 +4,6 @@
 using namespace std;
 #define LOG cout << __FUNCTION__ << endl;
 
-class MyClassA
-{
-public:
-	MyClassA() { LOG };
-	virtual ~MyClassA() { LOG };
-
-private:
-
-	
-};
-
-class MyClassB : public MyClassA
-{
-public:
-	MyClassB() { LOG };
-	~MyClassB() { LOG };
-
-private:
-
-};
-
-
 
 bool check(char* str) {
 	stack <char> st;
