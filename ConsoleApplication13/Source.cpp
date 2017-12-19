@@ -38,6 +38,7 @@ void main() {
 	cout << endl;
 	cout << check(")(1+2)(((8-1)*(3-5)))+(8-2)+)(");
 	cout << endl;
+	cout << check("(Hello)(world)(!)");
 	cin >> a;
 
 }
