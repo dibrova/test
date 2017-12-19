@@ -11,15 +11,15 @@ bool check(char* str) {
 	{
 		if (str[i] == '(')
 		{
-			st.push(str[i]);
+			st.push(str[i]);  cout << str[i]; LOG;
 		}
 		if (str[i] == ')' && st.size() && st.top() == '(')
 		{
-			st.pop();
+			st.pop();  cout << str[i]; LOG;
 		}
 		else if (str[i] == ')')
 		{
-			st.push(str[i]);
+			st.push(str[i]);  cout << str[i]; LOG;
 		}
 	}
 	if (st.empty())
@@ -34,7 +34,7 @@ bool check(char* str) {
 
 void main() {
 	char a;
-	cout << check("(1+2*(8-1)*(3-5)+(8-2))");
+	cout << check("(1+2*(8-1)(*)(3-5)+(8-2))");
 	cout << endl;
 	cout << check(")(1+2*)(((8-1)*(3-5)+(8-2)+)(");
 	cout << endl;
