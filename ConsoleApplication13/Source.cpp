@@ -11,15 +11,15 @@ bool check(char* str) {
 	{
 		if (str[i] == '(')
 		{
-			st.push(str[i]);  cout << str[i]; LOG;
+			st.push(str[i]);
 		}
 		if (str[i] == ')' && st.size() && st.top() == '(')
 		{
-			st.pop();  cout << str[i]; LOG;
+			st.pop();
 		}
 		else if (str[i] == ')')
 		{
-			st.push(str[i]);  cout << str[i]; LOG;
+			st.push(str[i]);
 		}
 	}
 	return (st.empty()) ?  true : false;
